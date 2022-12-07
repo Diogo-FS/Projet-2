@@ -52,9 +52,6 @@ article h1 {
   padding-left: 12%;
 }
 
-.descriptionHebergement {
-}
-
 .imageHebergement {
   width: 100%;
   max-height: 65%;
@@ -102,7 +99,7 @@ aside h1 {
 .imagePopulaire {
   width: 8em;
   height: 8em;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .boitePopulaire {
@@ -115,7 +112,49 @@ aside h1 {
   padding: 5px;
 }
 
+.descriptionPopulaire {
+  float: right;
+  padding-right: 15%;
+}
+
+.etoilePopulaire {
+  display: inline-block;
+  padding-top: 30%;
+}
+
 /* * Activites a Marseille */
+
+h2#titreActivite {
+  padding-left: 3%;
+}
+
+.conteneurActivite {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 3em;
+}
+
+.imageActivite {
+  width: 100%;
+  height: 90%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.boiteActivite {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  width: 20%;
+  height: auto;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.descriptionActivite {
+  padding-top: 3%;
+  padding-left: 1%;
+}
 
 /* *  Footer  */
 
