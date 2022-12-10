@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  src: local(Raleway\static\Raleway-Medium);
+  src: local(Raleway\static\Raleway-Medium.ttf);
 }
 
 .fa-solid.etoileVide {
@@ -14,9 +14,113 @@
   color: blue;
 }
 
-/*  * Header */
+a[target="_blank"] {
+  color: black;
+  text-decoration: none;
+}
 
-/* * Body  */
+a[target="_blank"]:hover {
+  color: blueviolet;
+}
+
+/*  * -------Header-------- */
+
+.barreAcceuil {
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  padding: 15px;
+}
+
+/* * -----Recherche----- */
+
+.barreRecherche {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+#position {
+  border-radius: 15px 0px 0px 15px;
+  background-color: #d9d9d9;
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.formulaireRecherche {
+  border: 2px solid #d9d9d9;
+  padding-bottom: 30px;
+  align-self: middle;
+}
+
+.boutonRecherche {
+  border-radius: 0px 15px 15px 0px;
+  background-color: blue;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*  *----- Filtres ------  */
+
+.filtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+.boutonFiltre {
+  border-radius: 30px;
+  color: black;
+  border: 2px solid #d9d9d9;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.filtres > p > strong {
+  justify-self: flex-start;
+}
+
+.fa-solid.bouton {
+  color: blue;
+}
+
+/* * ----- Petit I (informations) ----- */
+
+#petitI {
+  border-radius: 50%;
+  border: 2px solid #d9d9d9;
+  color: blue;
+  padding: 7px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-style: bold;
+}
+
+/* * --------Body-----------  */
+
+/* * ----Main---- */
 
 section {
   display: flex;
@@ -49,13 +153,7 @@ article h1 {
   justify-content: center;
   flex-wrap: wrap;
   width: 70%;
-  padding-left: 12%;
-}
-
-.imageHebergement {
-  width: 100%;
-  max-height: 65%;
-  border-radius: 15px 15px 0px 0px;
+  margin: auto;
 }
 
 .boiteHebergement {
@@ -63,13 +161,19 @@ article h1 {
   transition: 0.3s;
   background-color: white;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   border-radius: 15px;
   padding: 5px;
 }
 
 .boiteHebergement:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imageHebergement {
+  width: 100%;
+  max-height: 70%;
+  border-radius: 15px 15px 0px 0px;
 }
 
 /* * Les plus Populaires */
@@ -110,16 +214,15 @@ aside h1 {
   height: 40%;
   border-radius: 15px;
   padding: 5px;
+  display: flex;
+  justify-items: flex-start;
 }
 
 .descriptionPopulaire {
-  float: right;
-  padding-right: 15%;
 }
 
 .etoilePopulaire {
-  display: inline-block;
-  padding-top: 30%;
+  align-self: flex-end;
 }
 
 /* * Activites a Marseille */
@@ -156,7 +259,7 @@ h2#titreActivite {
   padding-left: 1%;
 }
 
-/* *  Footer  */
+/* *  --------Footer---------  */
 
 .conteneurFooter {
   display: flex;
