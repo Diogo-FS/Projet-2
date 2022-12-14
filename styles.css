@@ -17,10 +17,18 @@ a[target="_blank"]:hover {
   color: blueviolet;
 }
 
+h3 {
+  display: inline;
+}
+
 /* *-------Header-------- */
 
 /* .barreAcceuil {
 } */
+
+header {
+  margin-left: 3%;
+}
 
 #logoBooki {
   width: 61px;
@@ -82,28 +90,40 @@ nav li {
 
 .filtres {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   gap: 2%;
+}
+
+.conteneurBoutonFiltres {
+  margin-top: 1%;
+
+  /* ? envie d'utiliser display flex + justify content : space between  ~
+   ? mais les boutonsFiltres grossissent trop*/
 }
 
 .boutonFiltre {
   border-radius: 30px;
   color: black;
   border: 2px solid #d9d9d9;
-  padding: 15px 15px;
+  padding: 8px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
 
-.filtres > p > strong {
-  justify-self: flex-start;
+.boutonFiltre:hover {
+  background-color: blue;
+  opacity: 70%;
+  transition: 0.7s;
 }
 
 .fa-solid.bouton {
   color: blue;
+}
+
+#titreFiltres {
+  display: inline;
 }
 
 /* * ----- Petit I (informations) ----- */
@@ -173,11 +193,25 @@ article h1 {
   border-radius: 15px 15px 0px 0px;
 }
 
+#imageAubergePanier {
+  height: 80%;
+}
+
+.descriptionHebergement {
+  display: inline-block;
+  margin: auto;
+}
+
+p > span {
+  display: block;
+}
+
 /* * Les plus Populaires */
 /* ! Réparé partie populaire */
 
 aside {
-  width: 27%;
+  width: 30%;
+  max-height: 100%;
   background-color: #d9d9d9;
   border-radius: 15px;
 }
@@ -190,28 +224,36 @@ aside h1 {
 .conteneurPopulaire {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-.boitePopulaire {
-  display: flex;
-  height: 100%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 15px;
-  padding: 5px;
+  align-items: center;
+  gap: 4em;
 }
 
 .imagePopulaire {
-  width: 6rem;
-  max-height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 15px 0px 0px 15px;
 }
 
-/* .descriptionPopulaire {
-} */
+.boitePopulaire {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  width: 90%;
+  height: 40%;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+}
+
+.descriptionPopulaire {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#imageHotelBleuBlanc {
+  max-height: 30%;
+}
 
 /* .etoilePopulaire {
 } */
@@ -227,7 +269,7 @@ h2#titreActivite {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-bottom: 3em;
+  padding-bottom: 3rem;
 }
 
 .imageActivite {
@@ -272,7 +314,9 @@ footer {
 /* * ---- Tablette ---- 768px < scren < 992px ---- */
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  /* *--- Section Hebergement --- */
+  /* *----- Section Hebergement ----- */
+
+  /* *--- Hergement Marseille --- */
 
   .sectionHebergement {
     flex-wrap: wrap;
@@ -285,6 +329,8 @@ footer {
     width: 100%;
     max-height: auto;
   }
+
+  /* * --- Les Plus Populaires --- */
 
   aside {
     width: 100%;
@@ -299,27 +345,109 @@ footer {
   }
 
   .boitePopulaire {
-    width: 100%;
-    max-height: auto;
+    width: 80%;
+    max-height: 100%;
   }
 }
 
 /* *---- Portable ---- screen < 768px ---- */
 
 @media screen and (max-width: 768px) {
+  /* *---- Header ---- */
+
+  .presentattion {
+    margin: auto;
+  }
+
+  /* *-- Filtres -- */
+
+  .filtres {
+    display: unset;
+  }
+
+  .conteneurBoutonFiltres {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    column-gap: 5%;
+    row-gap: 15%;
+  }
+
+  #titreFiltres {
+    display: block;
+  }
+
   /* *--- Section Hebergement --- */
+
+  /* [class|=boite]{} */
+
+  /* * --Les Plus Populaires-- */
+
+  aside {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .boitePopulaire {
+    width: 80%;
+  }
+
+  /* * Hebergement Marseille */
+
+  article {
+    width: 100%;
+    background-color: white;
+  }
 
   .sectionHebergement {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .conteneurHebergement {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    order: 2;
+    flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .boiteHebergement {
+    width: 100%;
+    height: 199px;
+    margin: auto;
+  }
+
+  .imageHebergement {
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+  }
+
+  #afficherPlus {
+    display: none;
+  }
+
+  /* *--Activites Marseille-- */
+
+  .conteneurActivite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .boiteActivite {
+    width: 100%;
+    height: 199px;
+    margin: auto;
+  }
+
+  .imageActivite {
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
   }
 }
