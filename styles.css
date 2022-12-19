@@ -1,5 +1,9 @@
 /* * Global */
 
+html {
+  font-family: "Raleway", sans-serif;
+}
+
 .fa-solid.etoileVide {
   color: grey;
 }
@@ -13,15 +17,9 @@ a[target="_blank"] {
   text-decoration: none;
 }
 
-a[target="_blank"]:hover {
-  color: blueviolet;
-}
-
 h3 {
   display: inline;
 }
-
-/* ! @font-face */
 
 /* *-------Header-------- */
 
@@ -30,8 +28,7 @@ header {
 }
 
 #logoBooki {
-  width: 61px;
-  height: 29px;
+  width: 6rem;
 }
 
 nav {
@@ -47,11 +44,61 @@ nav li {
   padding: 15px;
 }
 
+/* * Effect de la barre au dessus */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+nav:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: blue;
+  transition: 0.5s;
+  left: 0;
+  top: -25px;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.barreAcceuil {
+  padding-bottom: 20px;
+}
+
+/* *--- 'présentation' --- */
+
+div.presentation h1 {
+  font-size: 22px;
+  max-width: 50%;
+}
+
+div.presentation p {
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
+}
+
 /* * -----Recherche----- */
 
 .barreRecherche {
   display: flex;
-  padding-bottom: 1em;
+  max-height: 49px;
 }
 
 #position {
@@ -62,22 +109,20 @@ nav li {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
 }
-
-/* ? centrage */
 
 ::placeholder {
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  left: 20px;
 }
-
-/* ? tous les boutons du formulaires cliquables */
 
 .formulaireRecherche {
   border: 2px solid #d9d9d9;
-  padding-bottom: 30px;
+  height: 43px;
+  width: 236px;
 }
 
 .boutonRecherche {
@@ -85,53 +130,52 @@ nav li {
   border-color: blue;
   background-color: blue;
   color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
+  padding: 15px 16px;
+  font-weight: 700;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.fa-solid.fa-magnifying-glass {
+  display: none;
 }
 
 /*  *----- Filtres ------  */
 
 .filtres {
+  margin-top: 2.5%;
   display: flex;
   justify-content: flex-start;
-  gap: 2%;
+}
+
+div.filtres h2 {
+  font-size: 18px;
 }
 
 .conteneurBoutonFiltres {
-  margin-top: 1%;
-
-  /* ? envie d'utiliser display flex + justify content : space between  ~
-   ? mais les boutonsFiltres grossissent trop*/
+  display: flex;
+  justify-content: space-around;
 }
 
 .boutonFiltre {
-  border-radius: 30px;
+  border-radius: 25px;
   color: black;
   border: 2px solid #d9d9d9;
-  padding: 8px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  padding: 4px 20px;
 }
 
-/*  ? hover seulement sur la boite et non le texte */
+.texteFiltre {
+  font-size: 17px;
+  font-weight: 700;
+}
 
 .boutonFiltre:hover {
-  background-color: blue;
-  opacity: 70%;
+  background: rgba(37, 37, 253, 0.5);
   transition: 0.7s;
 }
 
 .fa-solid.bouton {
   color: blue;
-}
-
-#titreFiltres {
-  display: inline;
 }
 
 /* * ----- Petit I (informations) ----- */

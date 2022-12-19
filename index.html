@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Booki</title>
     <script
       src="https://kit.fontawesome.com/fd67b0941f.js"
@@ -23,8 +29,8 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#hebergement" target="_blank">Hébergement</a></li>
-          <li><a href="#titreActivite" target="_blank">Activites</a></li>
+          <li><a href="#hebergement" target="_blank">Hébergements</a></li>
+          <li><a href="#titreActivite" target="_blank">Activités</a></li>
         </ul>
       </nav>
     </div>
@@ -43,25 +49,29 @@
         />
       </form>
       <button type="button" class="boutonRecherche">
-        <i class="fa-solid fa-magnifying-glass"></i> Rechercher
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span id="Rechercher"> Rechercher</span>
       </button>
     </div>
     <!-- * Partie : Filtres -->
     <div class="filtres">
-      <h2 id="titreFiltres">Filtres</h2>
+      <h2>Filtres</h2>
       <div class="conteneurBoutonFiltres">
-        <!-- ? utilisé Select au lieu de Button? -->
         <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-money-bill-wave bouton"></i> Economique
+          <i class="fa-solid fa-money-bill-wave bouton"></i>
+          <span class="texteFiltre"> Economique</span>
         </button>
         <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-person bouton"></i> Familial
+          <i class="fa-solid fa-person bouton"></i>
+          <span class="texteFiltre"> Familial</span>
         </button>
         <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-heart bouton"></i> Romatique
+          <i class="fa-solid fa-heart bouton"></i>
+          <span class="texteFiltre"> Romantique</span>
         </button>
         <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-dog bouton"></i> Animaux autorisés
+          <i class="fa-solid fa-dog bouton"></i>
+          <span class="texteFiltre"> Animaux autorisés</span>
         </button>
       </div>
     </div>
@@ -338,6 +348,7 @@
       </section>
     </main>
   </body>
+
   <footer>
     <!-- * Partie : Footer -->
     <div class="conteneurFooter">
