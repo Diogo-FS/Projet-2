@@ -13,14 +13,14 @@ footer {
 }
 
 .fa-solid.etoileVide {
-  color: grey;
+  color: #d9d9d9;
 }
 
 .fa-solid.etoileBleue {
-  color: blue;
+  color: #0065fc;
 }
 
-a[target="_blank"] {
+a[href="#"] {
   color: black;
   text-decoration: none;
 }
@@ -55,6 +55,7 @@ nav ul li a {
   font-size: 16px;
   letter-spacing: 0.5px;
   padding: 0 10px;
+  color: black;
 }
 
 nav ul li {
@@ -72,31 +73,31 @@ nav ul li a:after {
   position: absolute;
   height: 3px;
   width: 0;
-  background-color: blue;
+  background-color: #0065fc;
   transition: 0.5s;
   left: 0;
   top: -15px;
 }
 
 nav ul li a:hover {
-  color: blue;
+  color: #0065fc;
 }
 nav ul li a:hover:after {
   width: 100%;
 }
 
 .barreAcceuil {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 /* *--- 'présentation' --- */
 
-div.presentation h1 {
+.presentation h1 {
   font-size: 22px;
   max-width: 50%;
 }
 
-div.presentation p {
+.presentation p {
   font-size: 16px;
   position: relative;
   bottom: 10px;
@@ -111,7 +112,7 @@ div.presentation p {
 
 #position {
   border-radius: 15px 0px 0px 15px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   color: black;
   padding: 15px 15px;
   text-align: center;
@@ -123,25 +124,36 @@ div.presentation p {
   font-size: 18px;
   font-weight: 700;
   color: black;
-  position: relative;
-  left: 20px;
+  margin: auto 0;
+  padding-left: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin: auto 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .formulaireRecherche {
-  border: 2px solid #d9d9d9;
-  height: 43px;
+  border: 1px solid #f2f2f2;
+  height: 47px;
   width: 236px;
+  padding: 0;
 }
 
 .boutonRecherche {
   border-radius: 0px 15px 15px 0px;
-  border-color: blue;
-  background-color: blue;
+  border-color: #0065fc;
+  background-color: #0065fc;
   color: white;
   padding: 15px 16px;
   font-weight: 700;
   display: inline-block;
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -151,10 +163,9 @@ div.presentation p {
 /*  *----- Filtres ------  */
 
 .filtres {
-  margin-top: 40px;
+  padding-top: 31px;
   display: flex;
   justify-content: flex-start;
-  border: 1px solid red;
 }
 
 .filtres h2 {
@@ -165,14 +176,20 @@ div.presentation p {
   display: flex;
   justify-content: space-between;
   width: 70%;
-  border: 1px solid black;
 }
 
 .boutonFiltre {
   border-radius: 25px;
   color: black;
+  background-color: white;
   border: 2px solid #d9d9d9;
   padding: 4px 20px;
+}
+
+.boutonFiltre div {
+  display: inline;
+  position: relative;
+  top: 5px;
 }
 
 .texteFiltre {
@@ -180,21 +197,27 @@ div.presentation p {
   font-weight: 700;
 }
 
-.boutonFiltre:hover {
-  background: rgba(37, 37, 253, 0.5);
-  transition: 0.7s;
+.boutonFiltre i {
+  color: #0065fc;
+  width: 22px;
+  height: 22px;
 }
 
-.fa-solid.bouton {
-  color: blue;
+.boutonFiltre:hover {
+  background: rgb(222, 235, 255, 1);
+  transition: 0.7s;
 }
 
 /* * ----- Petit I (informations) ----- */
 
-#petitI {
+.petitI {
+  padding: 35px 0 52px 0;
+}
+
+.petitI span {
   border-radius: 50%;
-  border: 2px solid #d9d9d9;
-  color: blue;
+  border: 2px solid #f2f2f2;
+  color: #0065fc;
   padding: 2px 8px;
   text-align: center;
   text-decoration: none;
@@ -216,7 +239,7 @@ div.presentation p {
 /* * Hebergement a Marseille */
 
 article {
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 15px;
   width: 65%;
   max-height: 626px;
@@ -224,14 +247,13 @@ article {
 article h1 {
   display: inline-block;
   font-size: 22px;
-  position: relative;
-  left: 2.8rem;
+  margin-left: 40px;
 }
 
 .conteneurHebergement {
   display: grid;
   grid-template-columns: repeat(3, 28%);
-  gap: 2em;
+  gap: 31px;
   justify-content: center;
 }
 
@@ -240,7 +262,6 @@ article h1 {
   background-color: white;
   border-radius: 15px;
   padding: 5px;
-  border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -253,7 +274,6 @@ article h1 {
   width: 100%;
   max-height: 124px;
   border-radius: 15px 15px 0px 0px;
-  border: 1px solid red;
   object-fit: cover;
 }
 
@@ -264,7 +284,6 @@ article h1 {
 .descriptionHebergement {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
 }
 
 article h3 {
@@ -283,7 +302,6 @@ article p {
 
 .etoileHebergement {
   margin-top: auto;
-  border: 1px solid blue;
 }
 
 .etoileHebergement i {
@@ -294,9 +312,9 @@ article p {
 #afficherPlus {
   font-size: 18px;
   font-weight: 700;
-  position: relative;
-  bottom: 20px;
   text-decoration: none;
+  position: relative;
+  bottom: 15px;
 }
 
 /* * Les plus Populaires */
@@ -304,48 +322,53 @@ article p {
 aside {
   width: 31%;
   max-height: 626px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 15px;
-}
-
-aside h1 {
-  font-size: 22px;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #titrePopulaire {
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 1px solid pink;
   display: flex;
   justify-content: space-between;
+  margin-left: 39px;
+  margin-right: 39px;
+}
+
+#titrePopulaire h1 {
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 
 #titrePopulaire i {
-  border: 1px solid palevioletred;
-  width: 18px;
-  height: 15.75px;
   color: blue;
   margin-top: auto;
+  height: 14px;
 }
 
 .conteneurPopulaire {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 90%;
+  flex-grow: 1;
+  margin-left: 39px;
+  margin-right: 39px;
 }
 
 .boitePopulaire {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
-  max-height: 144px;
-  width: 80%;
+  height: 144px;
+  width: 100%;
   border-radius: 20px;
   padding: 5px;
   display: flex;
   margin: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .boitePopulaire:hover {
@@ -354,7 +377,7 @@ aside h1 {
 
 .imagePopulaire {
   width: 40%;
-  border: 1px solid green;
+  max-height: 144px;
 }
 
 .imagePopulaire img {
@@ -369,7 +392,6 @@ aside h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 1px solid blue;
 }
 
 aside h3 {
@@ -395,18 +417,18 @@ aside p {
 .conteneurActivite {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3rem;
+  padding-bottom: 61px;
 }
 
 .boiteActivite {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
-  width: 20%;
+  width: 22%;
   max-width: 302px;
   height: auto;
+  max-height: 445px;
   border-radius: 15px;
-  border: 1px solid cyan;
 }
 
 .boiteActivite:hover {
@@ -415,14 +437,15 @@ aside p {
 
 .imageActivite {
   width: 100%;
-  height: 90%;
+  height: 85%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
-  border: 2px solid yellow;
 }
 
 .descriptionActivite {
-  border: 1px solid rebeccapurple;
+  position: relative;
+  top: 14px;
+  left: 15px;
 }
 
 .descriptionActivite h3 {
@@ -432,7 +455,7 @@ aside p {
 /* *  --------Footer---------  */
 
 footer {
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
 }
 
 footer h2 {
@@ -525,8 +548,6 @@ footer ul a {
   }
 
   /* *--- Section Hebergement --- */
-
-  /* ? [class|=boite]{} */
 
   /* * --Les Plus Populaires-- */
 
