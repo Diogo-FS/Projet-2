@@ -2,6 +2,14 @@
 
 html {
   font-family: "Raleway", sans-serif;
+  margin: 0 50px;
+  scroll-behavior: smooth;
+}
+
+body,
+header,
+footer {
+  margin: 0 0;
 }
 
 .fa-solid.etoileVide {
@@ -23,17 +31,12 @@ h3 {
 
 /* *-------Header-------- */
 
-header {
-  margin-left: 50px;
-}
-
 #logoBooki {
   width: 6rem;
 }
 
 nav {
   float: right;
-  margin-right: 45px;
 }
 
 nav ul {
@@ -54,6 +57,10 @@ nav ul li a {
   padding: 0 10px;
 }
 
+nav ul li {
+  margin-left: auto;
+}
+
 nav:after {
   padding: 0;
   margin: 0;
@@ -68,7 +75,7 @@ nav ul li a:after {
   background-color: blue;
   transition: 0.5s;
   left: 0;
-  top: -25px;
+  top: -15px;
 }
 
 nav ul li a:hover {
@@ -144,19 +151,21 @@ div.presentation p {
 /*  *----- Filtres ------  */
 
 .filtres {
-  margin-top: 2.5rem;
+  margin-top: 40px;
   display: flex;
   justify-content: flex-start;
+  border: 1px solid red;
 }
 
-div.filtres h2 {
+.filtres h2 {
   font-size: 18px;
 }
 
 .conteneurBoutonFiltres {
   display: flex;
-  justify-content: space-around;
-  width: 60%;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid black;
 }
 
 .boutonFiltre {
@@ -186,20 +195,22 @@ div.filtres h2 {
   border-radius: 50%;
   border: 2px solid #d9d9d9;
   color: blue;
-  padding: 7px 11px;
+  padding: 2px 8px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   font-style: 700;
+  width: 4px;
+  height: 10px;
 }
 
 /* * --------Body-----------  */
+
 /* * ----Main---- */
 
 .sectionHebergement {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* * Hebergement a Marseille */
@@ -207,7 +218,7 @@ div.filtres h2 {
 article {
   background-color: #d9d9d9;
   border-radius: 15px;
-  width: 55rem;
+  width: 65%;
   max-height: 626px;
 }
 article h1 {
@@ -219,21 +230,19 @@ article h1 {
 
 .conteneurHebergement {
   display: grid;
-  grid-template-columns: repeat(3, 246px);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 28%);
+  gap: 2em;
   justify-content: center;
-  align-content: center;
 }
 
 .boiteHebergement {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  min-height: 199px;
   background-color: white;
   border-radius: 15px;
   padding: 5px;
-  padding-bottom: 30px;
-  max-width: 246px;
-  max-height: 199px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .boiteHebergement:hover {
@@ -244,17 +253,42 @@ article h1 {
   width: 100%;
   max-height: 124px;
   border-radius: 15px 15px 0px 0px;
+  border: 1px solid red;
+  object-fit: cover;
+}
+
+.imageHebergement img {
+  height: 124px;
 }
 
 .descriptionHebergement {
-  display: inline-block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
 }
 
-p.descriptionHebergement span {
-  display: inline-block;
-  position: relative;
-  top: 25px;
+article h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+article p {
+  font-size: 14px;
+}
+
+.descriptionHebergement h3,
+.descriptionHebergement p {
+  margin: 3px;
+}
+
+.etoileHebergement {
+  margin-top: auto;
+  border: 1px solid blue;
+}
+
+.etoileHebergement i {
+  height: 12px;
+  width: 12px;
 }
 
 #afficherPlus {
@@ -268,22 +302,31 @@ p.descriptionHebergement span {
 /* * Les plus Populaires */
 
 aside {
-  width: 25rem;
+  width: 31%;
   max-height: 626px;
   background-color: #d9d9d9;
   border-radius: 15px;
 }
 
 aside h1 {
-  display: inline-block;
   font-size: 22px;
-  margin-left: 2.2rem;
   margin-bottom: 0;
 }
 
-.fa-solid.fa-chart-line {
+#titrePopulaire {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+#titrePopulaire i {
+  border: 1px solid palevioletred;
+  width: 18px;
+  height: 15.75px;
   color: blue;
-  margin-left: 6rem;
+  margin-top: auto;
 }
 
 .conteneurPopulaire {
@@ -310,20 +353,32 @@ aside h1 {
 }
 
 .imagePopulaire {
-  width: 12rem;
+  width: 40%;
+  border: 1px solid green;
 }
 
 .imagePopulaire img {
-  width: 137px;
-  height: 144px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px 0 0 20px;
+  object-fit: cover;
 }
 
 .descriptionPopulaire {
-  width: 40rem;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border: 1px solid blue;
+}
+
+aside h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+aside p {
+  font-size: 14px;
 }
 
 .descriptionPopulaire h3,
@@ -337,14 +392,9 @@ aside h1 {
 
 /* * Activites a Marseille */
 
-h2#titreActivite {
-  margin-left: 3.5rem;
-}
-
 .conteneurActivite {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
   padding-bottom: 3rem;
 }
 
@@ -352,9 +402,11 @@ h2#titreActivite {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
-  width: 302px;
+  width: 20%;
+  max-width: 302px;
   height: auto;
   border-radius: 15px;
+  border: 1px solid cyan;
 }
 
 .boiteActivite:hover {
@@ -364,24 +416,32 @@ h2#titreActivite {
 .imageActivite {
   width: 100%;
   height: 90%;
+  object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+  border: 2px solid yellow;
 }
 
 .descriptionActivite {
-  padding-top: 3%;
-  padding-left: 1%;
+  border: 1px solid rebeccapurple;
+}
+
+.descriptionActivite h3 {
+  font-size: 16px;
 }
 
 /* *  --------Footer---------  */
 
 footer {
   background-color: #d9d9d9;
-  margin: 0 50px;
+}
+
+footer h2 {
+  font-size: 16px;
 }
 
 .conteneurFooter {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 footer ul {
@@ -391,6 +451,8 @@ footer ul {
 footer ul a {
   text-decoration: none;
   color: black;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* *------------ Media Queries---------- */
