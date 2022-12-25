@@ -1,0 +1,56 @@
+/* * ---- Tablette ---- 768px < scren < 992px ---- */
+
+/* * ------ Header ------ */
+
+.presentation h1 {
+  width: 100%;
+}
+
+/* *--- Filtres --- */
+
+.conteneurBoutonFiltres {
+  width: 100%;
+}
+
+/* *----- Section Hebergement ----- */
+
+/* *--- Hergement Marseille --- */
+
+.sectionHebergement {
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 55px;
+}
+
+article {
+  width: 100%;
+  max-height: auto;
+}
+
+/* * --- Les Plus Populaires --- */
+
+aside {
+  width: 100%;
+  height: 278px;
+}
+
+.conteneurPopulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boitePopulaire {
+  width: 100%;
+  max-width: 253px;
+}
+
+/* * Activités À Marseille */
+
+.descriptionActivite {
+  position: relative;
+  top: 4px;
+  left: 6px;
+  width: 80%;
+}
