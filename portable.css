@@ -1,8 +1,57 @@
 /* *---- Portable ---- screen < 768px ---- */
+
+html {
+  margin: 0 21px;
+}
+
 /* *---- Header ---- */
+
+.barreAcceuil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barreAcceuil ul {
+  padding-left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  float: none;
+  width: 100%;
+}
+
+nav ul li {
+  margin-left: 0px;
+}
+
+nav ul li a {
+  padding: 0 370px 0 120px;
+}
+
+nav ul li a:after {
+  top: 50px;
+}
 
 .presentattion {
   margin: auto;
+}
+
+/* * -- Recherche -- */
+
+.fa-solid.fa-magnifying-glass {
+  display: unset;
+}
+
+#position {
+  width: 53px;
+}
+
+#Rechercher {
+  display: none;
 }
 
 /* *-- Filtres -- */
@@ -11,14 +60,21 @@
   display: unset;
 }
 
-.filtres h2 {
-  display: inline;
-}
-
 .conteneurBoutonFiltres {
   display: grid;
   grid-template-columns: repeat(2, 46%);
-  gap: 20px;
+  row-gap: 17px;
+  column-gap: 14px;
+}
+
+.filtres h2 {
+  display: inline;
+  grid-column-end: span 2;
+  margin-bottom: 0;
+}
+
+.texteFiltre {
+  font-size: 11px;
 }
 
 #titreFiltres {
@@ -31,11 +87,18 @@
 
 aside {
   width: 100%;
+  height: 100%;
   border-radius: 0px;
 }
 
+.conteneurPopulaire {
+  display: flex;
+  flex-direction: column;
+}
+
 .boitePopulaire {
-  width: 80%;
+  width: 100%;
+  max-width: unset;
 }
 
 /* * Hebergement Marseille */
