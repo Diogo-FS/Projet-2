@@ -374,7 +374,7 @@ aside {
 }
 
 .imagePopulaire {
-  width: 40%;
+  width: 38%;
   max-height: 144px;
 }
 
@@ -393,7 +393,7 @@ aside {
 }
 
 aside h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -416,6 +416,7 @@ aside p {
   display: flex;
   justify-content: space-between;
   padding-bottom: 61px;
+  height: 445px;
 }
 
 .boiteActivite {
@@ -441,13 +442,13 @@ aside p {
 }
 
 .descriptionActivite {
-  position: relative;
-  top: 14px;
-  left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .descriptionActivite h3 {
   font-size: 16px;
+  margin: 11px 0 11px 15px;
 }
 
 /* *  --------Footer---------  */

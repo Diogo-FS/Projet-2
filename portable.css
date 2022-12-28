@@ -175,6 +175,7 @@ article {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
+  height: unset;
 }
 
 .boiteActivite {

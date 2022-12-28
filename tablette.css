@@ -39,6 +39,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .boitePopulaire {
@@ -48,9 +49,14 @@ aside {
 
 /* * Activités À Marseille */
 
-.descriptionActivite {
-  position: relative;
-  top: 4px;
-  left: 6px;
-  width: 80%;
+.conteneurActivite {
+  height: 267px;
+}
+
+.imageActivite {
+  height: 80%;
+}
+
+.descriptionActivite h3 {
+  margin: 5px 0 0 8px;
 }
