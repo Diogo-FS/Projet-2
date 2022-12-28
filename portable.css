@@ -106,9 +106,8 @@ aside {
 .conteneurPopulaire {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: stretch;
-  gap: 10px;
-  margin-top: 20px;
 }
 
 .boitePopulaire {
