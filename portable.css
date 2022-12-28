@@ -54,6 +54,10 @@ nav ul li a:after {
   flex-basis: 100%;
 }
 
+.barreRecherche input {
+  width: 100%;
+}
+
 .fa-solid.fa-magnifying-glass {
   display: unset;
 }
