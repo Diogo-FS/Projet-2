@@ -1,10 +1,14 @@
 /* *---- Portable ---- screen < 768px ---- */
 
 html {
-  margin: 0 21px;
+  margin: unset;
 }
 
 /* *---- Header ---- */
+
+header {
+  margin: 0 20px;
+}
 
 .barreAcceuil {
   display: flex;
@@ -29,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 0 370px 0 120px;
+  padding: 0 10px;
 }
 
 nav ul li a:after {
@@ -87,23 +91,28 @@ nav ul li a:after {
 
 aside {
   width: 100%;
-  height: 100%;
+  height: 580px;
   border-radius: 0px;
 }
 
 .conteneurPopulaire {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .boitePopulaire {
-  width: 100%;
+  flex-basis: 100%;
   max-width: unset;
 }
 
 /* * Hebergement Marseille */
 
 article {
+  max-height: unset;
   width: 100%;
   background-color: white;
 }
@@ -123,7 +132,7 @@ article {
 }
 
 .boiteHebergement {
-  width: 100%;
+  width: 90%;
   height: 199px;
   margin: auto;
 }
@@ -131,7 +140,7 @@ article {
 .imageHebergement {
   width: 100%;
   height: 80%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #afficherPlus {
@@ -139,6 +148,18 @@ article {
 }
 
 /* *--Activites Marseille-- */
+
+.sectionActivite {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.sectionActivite h2 {
+  margin-left: 5%;
+}
 
 .conteneurActivite {
   display: flex;
@@ -148,13 +169,21 @@ article {
 }
 
 .boiteActivite {
-  width: 100%;
+  width: 90%;
   height: 199px;
   margin: auto;
+  max-width: unset;
 }
 
 .imageActivite {
   width: 100%;
   height: 80%;
-  object-fit: fill;
+  object-fit: cover;
+}
+
+/* *---- Footer ---- */
+
+.conteneurFooter {
+  display: flex;
+  flex-direction: column;
 }
