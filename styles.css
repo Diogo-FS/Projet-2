@@ -94,7 +94,6 @@ nav ul li a:hover:after {
 
 .presentation h1 {
   font-size: 22px;
-  width: 50%;
 }
 
 .presentation p {
@@ -135,6 +134,7 @@ input[type="text"] {
   color: black;
   margin: auto 0;
   font-family: "Raleway", sans-serif;
+  outline-color: #f2f2f2;
 }
 
 .formulaireRecherche {
@@ -475,4 +475,282 @@ footer ul a {
   color: black;
   font-size: 14px;
   font-weight: 400;
+}
+
+/* * ---- Tablette ---- 768px < scren < 992px ---- */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  /* * ------ Header ------ */
+
+  .presentation h1 {
+    width: 100%;
+  }
+
+  /* *--- Filtres --- */
+
+  .conteneurBoutonFiltres {
+    width: 100%;
+  }
+
+  .texteFiltre {
+    text-align: end;
+  }
+
+  /* *----- Section Hebergement ----- */
+
+  /* *--- Hergement Marseille --- */
+
+  .sectionHebergement {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  article {
+    width: 100%;
+    max-height: auto;
+  }
+
+  /* * --- Les Plus Populaires --- */
+
+  aside {
+    width: 100%;
+    height: 278px;
+  }
+
+  .conteneurPopulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .boitePopulaire {
+    width: 100%;
+    max-width: 253px;
+  }
+
+  /* * Activités À Marseille */
+
+  .conteneurActivite {
+    height: 267px;
+  }
+
+  .imageActivite {
+    height: 80%;
+  }
+
+  .descriptionActivite h3 {
+    margin: 5px 0 0 8px;
+  }
+}
+
+/* *---- Portable ---- screen < 768px ---- */
+
+@media screen and (max-width: 768px) {
+  html {
+    margin: unset;
+  }
+
+  /* *---- Header ---- */
+
+  header {
+    margin: 0 20px;
+  }
+
+  .barreAcceuil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -20px;
+  }
+
+  .barreAcceuil ul {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0px;
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  nav ul li a {
+    padding: 0 10px;
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li a:after {
+    top: 50px;
+  }
+
+  .presentattion {
+    margin: auto;
+  }
+
+  /* * -- Recherche -- */
+
+  .barreRecherche {
+    display: flex;
+  }
+
+  .barreRecherche form {
+    flex-basis: 100%;
+  }
+
+  .barreRecherche input {
+    width: 100%;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    display: unset;
+  }
+
+  #position {
+    width: 53px;
+  }
+
+  #Rechercher {
+    display: none;
+  }
+
+  /* *-- Filtres -- */
+
+  .filtres {
+    display: unset;
+  }
+
+  .conteneurBoutonFiltres {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    row-gap: 17px;
+    column-gap: 14px;
+    width: 100%;
+  }
+
+  .filtres h2 {
+    display: inline;
+    grid-column-end: span 2;
+    margin-bottom: 0;
+  }
+
+  .texteFiltre {
+    font-size: 11px;
+  }
+
+  #titreFiltres {
+    display: block;
+  }
+
+  /* *--- Section Hebergement --- */
+
+  /* * --Les Plus Populaires-- */
+
+  aside {
+    width: 100%;
+    height: 580px;
+    border-radius: 0px;
+  }
+
+  .conteneurPopulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .boitePopulaire {
+    max-width: 690px;
+  }
+
+  /* * Hebergement Marseille */
+
+  article {
+    max-height: unset;
+    width: 100%;
+    background-color: white;
+  }
+
+  .sectionHebergement {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .conteneurHebergement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .boiteHebergement {
+    width: 90%;
+    height: 199px;
+    margin: auto;
+  }
+
+  .imageHebergement {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  #afficherPlus {
+    display: none;
+  }
+
+  /* *--Activites Marseille-- */
+
+  .sectionActivite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .sectionActivite h2 {
+    margin-left: 5%;
+  }
+
+  .conteneurActivite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: unset;
+  }
+
+  .boiteActivite {
+    width: 90%;
+    height: 199px;
+    margin: auto;
+    max-width: unset;
+  }
+
+  .imageActivite {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  /* *---- Footer ---- */
+
+  .conteneurFooter {
+    display: flex;
+    flex-direction: column;
+  }
 }
