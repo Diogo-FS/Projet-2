@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,73 +17,68 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header>
-    <!-- * Partie : Barre D'Acceuil -->
-    <div class="barreAcceuil">
-      <a href="index.html">
-        <img
-          src="Images_Booki/logo/Booki.png"
-          alt="Logo Booki"
-          id="logoBooki"
-        />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#hebergement">Hébergements</a></li>
-          <li><a href="#titreActivite">Activités</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="presentation">
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre-ville ou en pleine nature</p>
-    </div>
-    <!-- * Partie : Barre de Recherche -->
-    <div class="barreRecherche">
-      <div id="position"><i class="fa-solid fa-location-dot"></i></div>
-      <form>
-        <input
-          type="text"
-          placeholder="Marseille, France"
-          class="formulaireRecherche"
-        />
-      </form>
-      <button type="button" class="boutonRecherche">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <span id="Rechercher"> Rechercher</span>
-      </button>
-    </div>
-    <!-- * Partie : Filtres -->
-    <div class="filtres">
-      <div class="conteneurBoutonFiltres">
-        <h2>Filtres</h2>
-        <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-money-bill-wave fa-1x"></i>
-          <span class="texteFiltre"> Economique</span>
-        </button>
-        <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-person fa-1x"></i>
-          <span class="texteFiltre"> Familial</span>
-        </button>
-        <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-heart fa-1x"></i>
-          <span class="texteFiltre"> Romantique</span>
-        </button>
-        <button type="button" class="boutonFiltre">
-          <i class="fa-solid fa-dog fa-1x"></i>
-          <span class="texteFiltre"> Animaux autorisés</span>
+  <body>
+    <header>
+      <!-- * Partie : Barre D'Acceuil -->
+      <div class="barreAcceuil">
+        <a href="index.html">
+          <img src="Images/logo/Booki.png" alt="Logo Booki" id="logoBooki" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#hebergement">Hébergements</a></li>
+            <li><a href="#titreActivite">Activités</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="presentation">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+      </div>
+      <!-- * Partie : Barre de Recherche -->
+      <div class="barreRecherche">
+        <div id="position"><i class="fa-solid fa-location-dot"></i></div>
+        <form>
+          <input
+            type="text"
+            placeholder="Marseille, France"
+            class="formulaireRecherche"
+          />
+        </form>
+        <button type="button" class="boutonRecherche">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span id="Rechercher"> Rechercher</span>
         </button>
       </div>
-    </div>
-    <div class="petitI">
-      <p>
-        <span><i class="fa-solid fa-info"></i></span> Plus de 500 logements sont
-        disponibles dans cette ville
-      </p>
-    </div>
-  </header>
-
-  <body>
+      <!-- * Partie : Filtres -->
+      <div class="filtres">
+        <div class="conteneurBoutonFiltres">
+          <h2>Filtres</h2>
+          <button type="button" class="boutonFiltre">
+            <i class="fa-solid fa-money-bill-wave fa-1x"></i>
+            <span class="texteFiltre"> Economique</span>
+          </button>
+          <button type="button" class="boutonFiltre">
+            <i class="fa-solid fa-person fa-1x"></i>
+            <span class="texteFiltre"> Familial</span>
+          </button>
+          <button type="button" class="boutonFiltre">
+            <i class="fa-solid fa-heart fa-1x"></i>
+            <span class="texteFiltre"> Romantique</span>
+          </button>
+          <button type="button" class="boutonFiltre">
+            <i class="fa-solid fa-dog fa-1x"></i>
+            <span class="texteFiltre"> Animaux autorisés</span>
+          </button>
+        </div>
+      </div>
+      <div class="petitI">
+        <p>
+          <span><i class="fa-solid fa-info"></i></span> Plus de 500 logements
+          sont disponibles dans cette ville
+        </p>
+      </div>
+    </header>
     <main>
       <!-- * Partie : Hébergement -->
       <section class="sectionHebergement">
@@ -96,7 +91,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                     alt="Auberge de la Canebière"
                     class="imageHebergement"
                   />
@@ -119,7 +114,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    src="Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                     alt="Hõtel du port"
                     class="imageHebergement"
                   />
@@ -142,7 +137,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                     alt="Hôtel des mouettes"
                     class="imageHebergement"
                   />
@@ -165,7 +160,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    src="Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                     alt="Hôtel de la mer"
                     class="imageHebergement"
                   />
@@ -188,7 +183,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    src="Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                     alt="Auberge le Panier"
                     class="imageHebergement"
                     id="imageAubergePanier"
@@ -212,7 +207,7 @@
               <div class="boiteHebergement">
                 <div class="imageHebergement">
                   <img
-                    src="Images_Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    src="Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                     alt="Hôtel chez Amina"
                     class="imageHebergement"
                   />
@@ -246,7 +241,7 @@
               <div class="boitePopulaire">
                 <div class="imagePopulaire">
                   <img
-                    src="Images_Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="Hotel le Soleil du Matin"
                   />
                 </div>
@@ -268,7 +263,7 @@
               <div class="boitePopulaire">
                 <div class="imagePopulaire">
                   <img
-                    src="Images_Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="Chambres d'hôtel au bord de l'eau"
                   />
                 </div>
@@ -290,7 +285,7 @@
               <div class="boitePopulaire">
                 <div class="imagePopulaire">
                   <img
-                    src="Images_Booki/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    src="Images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                     alt="Hôtel Bleu et Blanc"
                   />
                 </div>
@@ -319,7 +314,7 @@
           <div class="boiteActivite">
             <a href="#">
               <img
-                src="Images_Booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                src="Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                 alt="Vieux-Port"
                 class="imageActivite"
               />
@@ -332,7 +327,7 @@
           <div class="boiteActivite">
             <a href="#">
               <img
-                src="Images_Booki/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                src="Images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort de Pomègues"
                 class="imageActivite"
               />
@@ -345,7 +340,7 @@
           <div class="boiteActivite">
             <a href="#">
               <img
-                src="Images_Booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                src="Images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="Parc national des Calanques"
                 class="imageActivite"
               />
@@ -358,7 +353,7 @@
           <div class="boiteActivite">
             <a href="#">
               <img
-                src="Images_Booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                src="Images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 alt="Notre-Dame-De-La-Garde"
                 class="imageActivite"
               />
@@ -370,32 +365,32 @@
         </div>
       </section>
     </main>
+    <!-- * Footer -->
+    <footer>
+      <div class="conteneurFooter">
+        <div>
+          <ul>
+            <li><h2>À propos</h2></li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><h2>Nos Hébergements</h2></li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><h2>Assistance</h2></li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous Contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
-  <!-- * Footer -->
-  <footer>
-    <div class="conteneurFooter">
-      <div>
-        <ul>
-          <li><h2>À propos</h2></li>
-          <li><a href="#">Fonctionnement du site</a></li>
-          <li><a href="#">Conditions générales</a></li>
-          <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><h2>Nos Hébergements</h2></li>
-          <li><a href="#">Charte qualité</a></li>
-          <li><a href="#">Proposer votre hôtel</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><h2>Assistance</h2></li>
-          <li><a href="#">Centre d'aide</a></li>
-          <li><a href="#">Nous Contacter</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 </html>
